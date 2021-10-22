@@ -27,15 +27,17 @@ public class driverFactory {
 	private static void createDriver() throws MalformedURLException {
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 	    desiredCapabilities.setCapability("platformName", "Android");
-	    desiredCapabilities.setCapability("deviceName", "emulator-5554");
+	    desiredCapabilities.setCapability("deviceName", "ce011711dcd5671c05");
 	    desiredCapabilities.setCapability("automationName", "uiautomator2");
-	    desiredCapabilities.setCapability("appPackage", "com.ctappium");
-	    desiredCapabilities.setCapability("appActivity", "com.ctappium.MainActivity");
+	    desiredCapabilities.setCapability("appPackage", "com.instagram.android");
+	    desiredCapabilities.setCapability("appActivity", "com.instagram.android.activity.MainTabActivity");
+	    desiredCapabilities.setCapability("unicodeKeyboard", true);
+	    desiredCapabilities.setCapability("resetKeybord", true);
 	    //desiredCapabilities.setCapability("noSign", "true");
 	    //desiredCapabilities.setCapability(MobileCapabilityType.APP, "path onde está o apk"); USADO PARA INSTALAR COISAS NO MOBILE tanto amulator quanto celular fisico
 
 	    driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
-	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	    //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    //this.driver = driver;
 	}
 	
@@ -48,3 +50,17 @@ public class driverFactory {
 	}
 	
 }
+
+//
+//DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+//desiredCapabilities.setCapability("platformName", "Android");
+//desiredCapabilities.setCapability("deviceName", "emulator-5554");
+//desiredCapabilities.setCapability("automationName", "uiautomator2");
+//desiredCapabilities.setCapability("appPackage", "com.ctappium");
+//desiredCapabilities.setCapability("appActivity", "com.ctappium.MainActivity");
+////desiredCapabilities.setCapability("noSign", "true");
+////desiredCapabilities.setCapability(MobileCapabilityType.APP, "path onde está o apk"); USADO PARA INSTALAR COISAS NO MOBILE tanto amulator quanto celular fisico
+//
+//driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
+//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//this.driver = driver;

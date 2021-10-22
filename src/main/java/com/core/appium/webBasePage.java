@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.time.Duration;
 
-import com.core.appium.personalizadaExceptions;
-
 //import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -22,11 +20,15 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.core.test.personalizadaExceptions;
+
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class webBasePage {
@@ -89,6 +91,14 @@ public class webBasePage {
 		
 	}
 	
+	public boolean encontrarAttrb(By by, String atributo, String textoDoAttrb) throws MalformedURLException {
+		return getDriver().findElement(by).getAttribute(atributo).contains(textoDoAttrb);
+	}
+	
+	public String encontrarAttrbValue(By by, String atributo) throws MalformedURLException {
+		return getDriver().findElement(by).getAttribute(atributo);
+	}
+	
 	public String ObterTexto(By by) throws MalformedURLException, personalizadaExceptions {
 		try {
 			return getDriver().findElement(by).getText();
@@ -110,6 +120,7 @@ public class webBasePage {
 	}
 	
 	public void  clicarPorTexto(String valor) throws MalformedURLException, personalizadaExceptions {
+		
 		try {
 			getDriver().findElement(By.xpath("//*[@text='"+valor+"']")).click();
 		}
@@ -144,33 +155,39 @@ public class webBasePage {
 		
 	}
 	
-//	@After
-//	public void tearDown() throws WebDriverException, IOException {
-//		this.gerarScreenShot();
-//		driverFactory.killDriver();
-//	}
+	public void tearDown() throws WebDriverException, IOException {
+		//this.gerarScreenShot();
+		driverFactory.killDriver();
+	}
 	
 //	@AfterClass ----tipo o AfterAll depois de tudo ele faz isso..
 //	public static void tearDown() throws MalformedURLException {
 //		driverFactory.killDriver();
 //	}
 	//colcoar tratamento para todas EC
-	public void aguarde(By by,int tempo, String waitType) throws MalformedURLException {
+	public boolean aguarde(By by,int tempo, String waitType) throws MalformedURLException {
 		WebDriverWait wait = new WebDriverWait(driverFactory.getDriver(), tempo);
 		
 		if(waitType == "visivel"){
-			wait.until(ExpectedConditions.presenceOfElementLocated(by));
+			try {
+				wait.until(ExpectedConditions.presenceOfElementLocated(by));
+				return true;
+			}
+			catch(Exception e) {
+				return false;
+			}
 			
 		}
 		else if(waitType == "invisivel") {
-			wait.until(ExpectedConditions.presenceOfElementLocated(by));
-			System.out.println("Elemento presente");
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
 			System.out.println("elemento insivivel agora!");
+			return true;
 		}
 		else if(waitType == "text in Element") {
 			wait.until(ExpectedConditions.textToBePresentInElementValue(by, "batata"));
+			return true;
 		}
+		return false;
 		
 	}
 	//-------------------TOUCH ACTIONS------------------------------
@@ -209,6 +226,19 @@ public class webBasePage {
 		.release()
 		.perform();
 		
+	}
+	
+	public void arrastarElement(By origem, String destino) throws MalformedURLException { //308, 285
+		
+		this.aguarde(origem, 2, "visivel");
+		MobileElement inicio = returnDriver().findElement(origem);
+		//MobileElement fim = returnDriver().findElement(By.id(destino));
+		
+	    new TouchAction<>(returnDriver())
+	    .longPress(LongPressOptions.longPressOptions().withElement(ElementOption.element(inicio)))
+	    .moveTo(PointOption.point(308, 270))
+	    .release()
+	    .perform();
 	}
 	
 	public void swipePagina(double inicio, double fim) throws MalformedURLException {
@@ -251,10 +281,15 @@ public class webBasePage {
 		.perform();
 	}
 	
+	public void voltar() throws MalformedURLException {
+		getDriver().navigate().back();
+	}
+	
 	
 	//---------------------------------------------------------------
 	
 	public AndroidDriver<MobileElement> returnDriver() throws MalformedURLException {
+		
 		return getDriver();
 	}
 	

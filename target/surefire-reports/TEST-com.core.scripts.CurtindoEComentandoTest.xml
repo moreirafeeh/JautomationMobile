@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.core.scripts.CurtindoEComentandoTest" time="518.584" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.12\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Felipe\eclipse-workspace\appiumteste"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Felipe\eclipse-workspace\appiumteste"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.12+8-LTS-237"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Felipe\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.12\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-11.0.12/bin;C:\Program Files\Java\jdk-11.0.12/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\platform-tools_r30.0.3-windows\platform-tools;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Program Files\Java\jdk-11.0.12\bin;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\Git\cmd;C:\Users\Felipe\AppData\Local\Android\Sdk\tools;C:\Users\Felipe\AppData\Local\Android\Sdk\tools\bin;C:\Users\Felipe\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Felipe\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Felipe\AppData\Local\Programs\Python\Python38-32\;C:\Users\Felipe\AppData\Local\Microsoft\WindowsApps;C:\Users\Felipe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Felipe\AppData\Roaming\npm;C:\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Felipe"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="Felipe"/>
+    <property name="java.class.path" value="C:\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.12"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.core.scripts.CurtindoEComentandoTest" name="curtirEComentar" time="518.584">
+    <error message="An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-OASDRMR&apos;, ip: &apos;169.254.123.171&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.instagram.android.activ..., appPackage: com.instagram.android, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.instagram.android.activ..., appPackage: com.instagram.android, automationName: uiautomator2, deviceName: ce011711dcd5671c05, platformName: android, resetKeybord: true, unicodeKeyboard: true}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930F, deviceName: ce011711dcd5671c05, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce011711dcd5671c05, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, resetKeybord: true, statBarHeight: 72, takesScreenshot: true, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 6c0ed3f7-5f2c-4f2e-9000-0827d6f1768c
+*** Element info: {Using=id, value=com.instagram.android:id/row_feed_photo_profile_name}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-OASDRMR&apos;, ip: &apos;169.254.123.171&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.instagram.android.activ..., appPackage: com.instagram.android, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.instagram.android.activ..., appPackage: com.instagram.android, automationName: uiautomator2, deviceName: ce011711dcd5671c05, platformName: android, resetKeybord: true, unicodeKeyboard: true}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930F, deviceName: ce011711dcd5671c05, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce011711dcd5671c05, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, resetKeybord: true, statBarHeight: 72, takesScreenshot: true, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 6c0ed3f7-5f2c-4f2e-9000-0827d6f1768c
+*** Element info: {Using=id, value=com.instagram.android:id/row_feed_photo_profile_name}
+	at jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.core.appium.webBasePage.encontrarAttrbValue(webBasePage.java:99)
+	at com.core.page.TimeLinePage.descerTimeLine(TimeLinePage.java:43)
+	at com.core.scripts.CurtindoEComentandoTest.curtirEComentar(CurtindoEComentandoTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>DORMINDO
+ACORDEI
+ficadica_sp
+ACRESCENTANDO NOME NO ARRAY ficadica_sp
+SCROLEI  VEZES: 1
+milenabatistada_silva
+ACRESCENTANDO NOME NO ARRAY milenabatistada_silva
+SCROLEI  VEZES: 2
+SCROLEI  VEZES: 3
+yxpxy
+SCROLEI  VEZES: 4
+SCROLEI  VEZES: 5
+rxlfs
+ACRESCENTANDO NOME NO ARRAY rxlfs
+SCROLEI  VEZES: 6
+teodoro.semh
+ACRESCENTANDO NOME NO ARRAY teodoro.semh
+SCROLEI  VEZES: 7
+SCROLEI  VEZES: 8
+_pqmarii
+ACRESCENTANDO NOME NO ARRAY _pqmarii
+SCROLEI  VEZES: 9
+_alejoortiz
+ACRESCENTANDO NOME NO ARRAY _alejoortiz
+SCROLEI  VEZES: 10
+eboyslist
+ACRESCENTANDO NOME NO ARRAY eboyslist
+SCROLEI  VEZES: 11
+fabiolamendes362
+ACRESCENTANDO NOME NO ARRAY fabiolamendes362
+SCROLEI  VEZES: 12
+SCROLEI  VEZES: 13
+debbie_binha
+ACRESCENTANDO NOME NO ARRAY debbie_binha
+SCROLEI  VEZES: 14
+viviane_free_fire_
+ACRESCENTANDO NOME NO ARRAY viviane_free_fire_
+SCROLEI  VEZES: 15
+ficadica_sp
+SCROLEI  VEZES: 16
+milenabatistada_silva
+SCROLEI  VEZES: 17
+SCROLEI  VEZES: 18
+yxpxy
+SCROLEI  VEZES: 19
+SCROLEI  VEZES: 20
+rxlfs
+SCROLEI  VEZES: 21
+teodoro.semh
+SCROLEI  VEZES: 22
+SCROLEI  VEZES: 23
+_pqmarii
+SCROLEI  VEZES: 24
+_alejoortiz
+SCROLEI  VEZES: 25
+eboyslist
+SCROLEI  VEZES: 26
+fabiolamendes362
+SCROLEI  VEZES: 27
+SCROLEI  VEZES: 28
+debbie_binha
+SCROLEI  VEZES: 29
+</system-out>
+    <system-err>out 22, 2021 12:07:28 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+</testsuite>
